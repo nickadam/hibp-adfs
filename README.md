@@ -7,7 +7,7 @@ This script gets the sha1 hash of the submitted password and checks it against t
 ## Install
 
 - Set the min_pwnage to your desired amount
-- Set the change_password_url, or leave it as an empty string
+- Set the change_password_url, or set it to an empty string
 - Add the contents of this js file to the end of your ADFS theme's `onload.js` file. [Microsoft docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/custom-web-themes-in-ad-fs)
 
 ## Considerations
