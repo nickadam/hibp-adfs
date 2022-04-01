@@ -11,5 +11,6 @@ This script gets the sha1 hash of the submitted password and checks it against t
 - Add the contents of this js file to the end of your ADFS theme's `onload.js` file. [Microsoft docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/custom-web-themes-in-ad-fs)
 
 ## Considerations
+- There is no check to verify the submitted password is correct, that comes after the API call.
 - If the HaveIBeenPwned API is unavailable or unresponsive from the end user's perspective, the login will continue without the check.
 - If the API call takes longer than 2 seconds to complete, the check is aborted and the login will continue.
